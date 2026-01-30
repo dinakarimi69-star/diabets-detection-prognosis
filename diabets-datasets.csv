@@ -1,0 +1,11 @@
+ID,Age,Blood_Sugar_mg_dL,Fatigue,Excess_Thirst,Frequent_Urination,Blurred_Vision,Weight_Loss,Diabetes_Status
+1,45,180,Yes,Yes,Yes,Yes,Yes,Diabetes
+2,56,120,Yes,Yes,Yes,No,No,Diabetes
+3,67,160,Yes,Yes,Yes,Yes,Yes,Diabetes
+4,33,90,No,No,No,No,No,Non-Diabetes
+5,29,110,No,No,No,No,No,Non-Diabetes
+6,50,150,Yes,Yes,Yes,Yes,No,Diabetes
+7,60,100,Yes,No,No,No,No,Non-Diabetes
+8,40,135,Yes,Yes,Yes,Yes,No,Diabetes
+9,55,95,No,No,No,No,No,Non-Diabetes
+10,48,200,Yes,Yes,Yes,Yes,Yes,Diabetes
