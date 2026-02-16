@@ -28,7 +28,7 @@ columns_to_encode = [
     "Diabetes_Status"
 ]
 
-# Initialize LabelEncoder
+
 encoder = LabelEncoder()
 
 
@@ -102,4 +102,5 @@ plt.barh(features, importances, color='skyblue')
 plt.xlabel("Importance Score")
 plt.title("Feature Importances for Diabetes Detection")
 plt.show()
+
 
