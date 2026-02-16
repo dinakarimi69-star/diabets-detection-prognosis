@@ -52,10 +52,10 @@ for col in df.columns:
 print("\nData types after encoding:")
 print(df.dtypes)
 
-X = df.drop(["ID", "Diabetes_Status"], axis=1)  # Features (remove 'ID' and 'Diabetes_Status' column)
-y = df["Diabetes_Status"]  # Target (Diabetes_Status column)
+X = df.drop(["ID", "Diabetes_Status"], axis=1) 
+y = df["Diabetes_Status"]  
 
-# Split the dataset into training and test sets (70% train, 30% test)
+
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
 
 
@@ -101,6 +101,7 @@ plt.barh(features, importances, color='skyblue')
 plt.xlabel("Importance Score")
 plt.title("Feature Importances for Diabetes Detection")
 plt.show()
+
 
 
 
