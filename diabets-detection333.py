@@ -34,8 +34,7 @@ encoder = LabelEncoder()
 
 for col in columns_to_encode:
     if col in df.columns:
-        df[col] = encoder.fit_transform(df[col].astype(str))  # Ensure everything is converted to string before encoding
-    else:
+        df[col] = encoder.fit_transform(df[col].astype(str))  
         print(f"Warning: Column '{col}' not found in the dataset!")
 
 
@@ -102,5 +101,6 @@ plt.barh(features, importances, color='skyblue')
 plt.xlabel("Importance Score")
 plt.title("Feature Importances for Diabetes Detection")
 plt.show()
+
 
 
