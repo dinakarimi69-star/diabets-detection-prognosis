@@ -15,10 +15,10 @@ print("Columns in the dataset:", df.columns)
 
 df.columns = df.columns.str.strip()
 
-# Check columns again after stripping spaces
+
 print("\nUpdated Columns:", df.columns)
 
-# Columns to encode
+
 columns_to_encode = [
     "Fatigue", 
     "Excess_Thirst", 
@@ -31,7 +31,7 @@ columns_to_encode = [
 # Initialize LabelEncoder
 encoder = LabelEncoder()
 
-# Check and encode columns
+
 for col in columns_to_encode:
     if col in df.columns:
         df[col] = encoder.fit_transform(df[col].astype(str))  # Ensure everything is converted to string before encoding
@@ -50,7 +50,6 @@ for col in df.columns:
     if df[col].dtype == 'object':  # Check if the column is still of type 'object'
         df[col] = encoder.fit_transform(df[col].astype(str))
 
-# Check the data types of columns
 print("\nData types after encoding:")
 print(df.dtypes)
 
@@ -103,3 +102,4 @@ plt.barh(features, importances, color='skyblue')
 plt.xlabel("Importance Score")
 plt.title("Feature Importances for Diabetes Detection")
 plt.show()
+
