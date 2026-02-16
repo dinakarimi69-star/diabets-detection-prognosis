@@ -41,12 +41,12 @@ for col in columns_to_encode:
 print("\nMissing values in dataset:")
 print(df.isnull().sum())
 
-# Fill missing values with mode (for categorical columns)
+
 df = df.fillna(df.mode().iloc[0])
 
 
 for col in df.columns:
-    if df[col].dtype == 'object':  # Check if the column is still of type 'object'
+    if df[col].dtype == 'object': 
         df[col] = encoder.fit_transform(df[col].astype(str))
 
 print("\nData types after encoding:")
@@ -101,6 +101,7 @@ plt.barh(features, importances, color='skyblue')
 plt.xlabel("Importance Score")
 plt.title("Feature Importances for Diabetes Detection")
 plt.show()
+
 
 
 
